@@ -1,0 +1,14 @@
+{% extends "user/base.html" %}
+
+
+{% load crispy_forms_tags%}
+{% block content %}
+
+<h2><strong style="color: purple;">You have been logged out</strong> </h2>
+<div class="border-top pt-3">
+    <small class="text-muted">Already Have An Account?
+        <a href="{% url 'login' %}" class="ml-2" style="color: pink; font-weight: bold;">Log in</a>
+    </small>
+</div>
+
+{% endblock content %}
